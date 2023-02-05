@@ -1,4 +1,4 @@
-package Mytaskforitacademy;
+package mytaskforitacademy;
 
 public class Task1 {
     public static void main(String[] args) {

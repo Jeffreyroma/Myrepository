@@ -1,4 +1,4 @@
-package Mytaskforitacademy;
+package mytaskforitacademy;
 
 import java.util.Scanner;
 
@@ -12,8 +12,6 @@ public class Task2 {
         int num1 = in.nextInt();
         System.out.println("Input second number: ");
         int num2 = in.nextInt();
-        int sum = (num1 + num2) + num1 * num2;
-
-        return sum;
+        return ((num1 + num2) + num1 * num2);
     }
 }

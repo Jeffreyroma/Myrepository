@@ -1,4 +1,4 @@
-package Mytaskforitacademy;
+package mytaskforitacademy;
 
 import java.util.Scanner;
 
@@ -7,11 +7,8 @@ public class Task5 {
         Scanner in = new Scanner(System.in);
         System.out.println("Input number: ");
         int num = in.nextInt();
-        int result = num % 2;
-        if (num % 2 == 0){
-            System.out.println(0);
-        }else
-            System.out.println(result);
+        System.out.println("Result: ");
+            System.out.println(num % 2);
     }
 
 }

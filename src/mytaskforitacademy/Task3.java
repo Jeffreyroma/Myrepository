@@ -1,4 +1,4 @@
-package Mytaskforitacademy;
+package mytaskforitacademy;
 
 import java.util.Scanner;
 
