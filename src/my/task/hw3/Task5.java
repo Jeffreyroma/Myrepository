@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task5 {
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         System.out.println("Input number: ");
         int num = in.nextInt();
@@ -15,7 +16,7 @@ public class Task5 {
             } if (num >= 15 && num <= 29) {
                 System.out.println("2 quarter");
             } if (num >= 30 && num <= 44) {
-            System.out.println("3 quarter");
+                System.out.println("3 quarter");
             } if (num >= 45 && num <= 59) {
                 System.out.println("4 quarter");
             }

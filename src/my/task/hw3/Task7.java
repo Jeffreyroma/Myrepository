@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task7 {
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         System.out.println("Input first number: ");
         int num1 = in.nextInt();
@@ -18,6 +19,5 @@ public class Task7 {
             System.out.println("Bad luck,try again)");
             System.out.println("The right answer is: "+ composition);
         }
-
     }
 }

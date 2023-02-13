@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task8 {
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         System.out.println("Input number: ");
         int testnum = in.nextInt();
@@ -48,8 +49,8 @@ public class Task8 {
                 } if (testnum == 28800) {
             System.out.println("The working day is over");
             System.out.println("For Petrov:" + (28800 - testnum));
-                }
-            }
+        }
         }
     }
+}
 

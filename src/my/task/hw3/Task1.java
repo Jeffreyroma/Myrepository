@@ -2,6 +2,7 @@ package my.task.hw3;
 
 public class Task1 {
     public static void main(String[] args) {
+
         int num1 =10;
         Integer num2 =122;
         autoPacking(num1);
