@@ -1,15 +1,13 @@
 package my.task.hw3;
-
 import java.util.Scanner;
-
 public class Task3 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Input number: ");
         int num = in.nextInt();
-        if (num>7){
-            System.out.println("2");
-        }switch (num){
+        if (num>7) {
+            System.out.println("The number is too large");
+        } switch (num) {
             case 1:
                 System.out.println("Monday");
                 break;
@@ -25,7 +23,8 @@ public class Task3 {
             case 5:
                 System.out.println("Friday ");
                 break;
-            case 6,7:
+            case 6:
+            case 7:
                 System.out.println("Weekend");
                 break;
         }
