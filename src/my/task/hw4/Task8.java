@@ -16,7 +16,7 @@ public class Task8 {
                 reward++;
             }
         }
-        System.out.println("Number of lucky ticket is: " + reward);
+        System.out.println("Number of lucky ticket is : " + reward);
     }
 }
 

@@ -6,7 +6,7 @@ public class Task4 {
 
         int[] myArray = new int[5];
         Random rnd =new Random();
-        System.out.println("Array:");
+        System.out.println("Array :");
         for (int i=0;i<myArray.length;i++){
             myArray[i] = rnd.nextInt(11);
             System.out.print(myArray[i]+"  ");

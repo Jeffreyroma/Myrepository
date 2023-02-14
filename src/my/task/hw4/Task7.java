@@ -7,7 +7,7 @@ public class Task7 {
 
         int[] array = new int[10];
         Random rnd = new Random();
-        System.out.println("Main array:");
+        System.out.println("Main array :");
         for (int i = 0; i < array.length; i++) {
             array[i] = rnd.nextInt(10);
         }
