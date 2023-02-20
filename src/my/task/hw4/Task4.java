@@ -10,10 +10,10 @@ public class Task4 {
             myArray[i] = rnd.nextInt(24);
             System.out.print(myArray[i]+"  ");
         }
-        max(myArray);
+        maxminIndex(myArray);
     }
 
-    private static void max(int[] myArray) {
+    private static void maxminIndex(int[] myArray) {
         int minElement = myArray[0];
         int maxElement = myArray[0];
         int indexMax = 0;
