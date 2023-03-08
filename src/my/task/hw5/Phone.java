@@ -31,11 +31,13 @@ public class Phone {
         return number;
     }
 
-    public void sendMessage(String number1,String number2,String number3) {
-        System.out.println("A message will be sent to these numbers: "+ number1+" "+number2+" "+number3);
+    public void sendMessage(String... numbers) {
+        for (String number : numbers) {
+            System.out.print(number+ " ");
+        }
     }
 
     public void receiveCall(String name, String number) {
-        System.out.println("Call from "+ name+" "+ number);
+        System.out.println("\nCall from "+ name+" "+ number);
     }
 }

@@ -3,8 +3,9 @@ package my.task.hw5;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("Task1");
         objectPerson();
-        System.out.println();
+        System.out.println("\nTask2");
         objectPhone();
     }
 
@@ -17,6 +18,7 @@ public class Main {
 
         person.move();
         person.talk();
+        System.out.println();
         person1.move();
         person1.talk();
     }
@@ -34,12 +36,12 @@ public class Main {
         phone1.receiveCall("Anton");
         System.out.println(phone1.getNumber());
         phone1.sendMessage("+12312313","+243552423","+2347346345");
-        phone1.receiveCall("Anton","+999999\n");
+        phone1.receiveCall("Anton","+999999");
 
         phone2.receiveCall("Artem");
         System.out.println(phone2.getNumber());
         phone2.sendMessage("+123123112313","+243512352423","+2341237346345");
-        phone1.receiveCall("Artem","+999999\n");
+        phone1.receiveCall("Artem","+999999");
 
         phone3.receiveCall("Roma");
         System.out.println(phone3.getNumber());
