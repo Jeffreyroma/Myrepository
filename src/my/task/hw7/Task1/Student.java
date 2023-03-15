@@ -1,8 +1,12 @@
-package my.task.hw7;
+package my.task.hw7.Task1;
 
 public class Student {
 
-    private String name, surName, titleGroup;
+    private String name;
+
+    private String surName;
+
+    private String titleGroup;
 
     private int numberCourse;
 
@@ -37,16 +41,14 @@ public class Student {
     public void setAverageMark(double averageMark) {this.averageMark = averageMark;}
 
     public String result() {
-      return (getName()+", "+getSurName()+", "+getTitleGroup()+", "+getNumberCourse()+", "+getAverageMark()+", Scholarship is: "+getScholarship());
+      return ("Name: "+getName()+", Surname: "+getSurName()+", Title group: "+getTitleGroup()+", Number course: "+getNumberCourse()+", Average mark: "+getAverageMark()+", Scholarship is: "+getScholarship());
     }
 
     public double getScholarship() {
-        double scholarship;
         if (getAverageMark() == 5) {
-            scholarship = 100;
+            return  100;
         } else {
-            scholarship = 80;
+            return  80;
         }
-        return scholarship;
     }
 }

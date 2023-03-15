@@ -1,28 +1,34 @@
 package my.task.hw7;
 
+import my.task.hw7.Task1.GraduateStudent;
+import my.task.hw7.Task1.Student;
+import my.task.hw7.Task2.Celsius;
+import my.task.hw7.Task3.*;
+import my.task.hw7.Task4.*;
+
 public class Main {
 
     public static void main(String[] args) {
         System.out.println("Task1\n");
-        arrayOfStudentAndTeacher();
+        createAndWriteArrayOfStudentAndTeacher();
 
         System.out.println("\nTask2\n");
         transferTo();
 
         System.out.println("\nTask3\n");
-        fruitsInBasket();
+        createFruitsInBasket();
 
         System.out.println("\nTask4\n");
-        flower();
+        createFlowerAndBouquet();
 
     }
 
-    private static void arrayOfStudentAndTeacher() {
+    private static void createAndWriteArrayOfStudentAndTeacher() {
         Student student1 = new Student("Roma", "Makarchikov", "OOP", 1, 4.88);
 
-        Teacher teacher1 = new Teacher("Ivan", "Statkin", "GPG", 3, 5, "true");
+        GraduateStudent graduateStudent1 = new GraduateStudent("Ivan", "Statkin", "GPG", 3, 5, "true");
 
-        Student[] students = new Student[]{student1, teacher1};
+        Student[] students = new Student[]{student1, graduateStudent1};
         for (Student student : students) {
             System.out.println(student.result());
         }
@@ -34,7 +40,7 @@ public class Main {
         celsius.transferToFahrenheit();
     }
 
-    private static void fruitsInBasket() {
+    private static void createFruitsInBasket() {
         Apple apple = new Apple(4, 1.5);
         System.out.println("Apple");
         apple.printManufacturerInfo();
@@ -47,54 +53,43 @@ public class Main {
         System.out.println("\nApricot");
         apricot.printManufacturerInfo();
 
-        Fruit[] basket = new Fruit[]{apple, pear, apricot};
+        Basket basket = new Basket();
+        basket.addFruitsInBasket(apple);
+        basket.addFruitsInBasket(pear);
+        basket.addFruitsInBasket(apricot);
+
         System.out.println("\nBasket of fruits:");
-        double sum = 0;
-        for (Fruit fruits : basket) {
-            System.out.println(fruits.basket() + ", cost: " + fruits.getCost());
-            sum = sum + fruits.getCost();
-        }
-        System.out.println("\nSum of all fruits: " + sum);
+        basket.calculatingTheCostOfFruits();
     }
 
-    private static void flower() {
-        Flower tulpan = new Tulpan("Tulpan","white",60,3);
+    private static void createFlowerAndBouquet() {
+        Flower tulpan = new Flower("Tulpan", "white", 60, 3);
 
-        Flower rose = new Rose("Rose","red",12,10);
+        Flower rose = new Flower("Rose", "red", 12, 10);
 
-        Flower peony = new Peony("Peony","yellow",5,20);
+        Flower peony = new Flower("Peony", "yellow", 5, 20);
 
-        Flower gypsophiles = new Gypsophiles("Gypsophiles","blue",40,5);
+        Flower gypsophiles = new Flower("Gypsophiles", "blue", 40, 5);
 
-        String[] bouquet = new String[]{tulpan.getName(), rose.getName(), peony.getName(), gypsophiles.getName()};
+        Bouquet bouquet = new Bouquet();
+        bouquet.addFlowersInBouquet(tulpan);
+        bouquet.addFlowersInBouquet(rose);
+        bouquet.addFlowersInBouquet(peony);
+        bouquet.addFlowersInBouquet(gypsophiles);
+
         System.out.println("Our bouquet: ");
-        for (String flower : bouquet) {
-            System.out.print(flower+ " ");
-        }
-
+        bouquet.printNameOfFlowers();
         System.out.println();
-        String[] colorInBouquet = new String[]{tulpan.getColor(), rose.getColor(), peony.getColor(), gypsophiles.getColor()};
+
         System.out.println("\nСolors in the bouquet:");
-        for (String color : colorInBouquet) {
-            System.out.print(color+ " ");
-        }
-
+        bouquet.printColorOfFlowers();
         System.out.println();
-        int[] priceOfBouquet = new int[]{tulpan.getPrice(), rose.getPrice(), peony.getPrice(), gypsophiles.getPrice()};
-        System.out.println("\nPrice of this bouquet:");
-        int priceOfAllFlowers = 0;
-        for (int price : priceOfBouquet) {
-            priceOfAllFlowers = priceOfAllFlowers + price;
-        }
-        System.out.print(priceOfAllFlowers);
 
-        System.out.println();
-        int[] lifeTimeOfBouquet = new int[]{tulpan.getlifetimeInHours(),rose.getlifetimeInHours(),peony.getlifetimeInHours(),gypsophiles.getlifetimeInHours()};
         System.out.println("\nPrice of this bouquet:");
-        int lifTimeOfAllFlowers = 0;
-        for (int time : lifeTimeOfBouquet) {
-            lifTimeOfAllFlowers = lifTimeOfAllFlowers + time;
-        }
-        System.out.print(lifTimeOfAllFlowers);
+        bouquet.printPriceOfBouquet();
+        System.out.println();
+
+        System.out.println("\nLife time of this bouquet:");
+        bouquet.printLifeTimeOfBouquet();
     }
 }

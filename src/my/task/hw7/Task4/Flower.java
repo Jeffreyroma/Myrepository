@@ -1,6 +1,6 @@
-package my.task.hw7;
+package my.task.hw7.Task4;
 
-public abstract class Flower {
+public class Flower {
 
     private String name;
 

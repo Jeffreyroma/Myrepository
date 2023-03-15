@@ -1,12 +1,8 @@
-package my.task.hw7;
+package my.task.hw7.Task2;
 
 public class Celsius implements Translatable {
 
     private double celsius;
-
-    final double kelvin = 0;
-
-    final double fahrenheit = 0;
 
     public Celsius(double celsius) {
         this.celsius = celsius;

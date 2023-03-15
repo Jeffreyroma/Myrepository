@@ -1,4 +1,4 @@
-package my.task.hw7;
+package my.task.hw7.Task3;
 
 public class Apricot extends Fruit {
 
@@ -19,7 +19,7 @@ public class Apricot extends Fruit {
     }
 
     @Override
-    public String basket() {
-        return (position);
+    public String getNameOfPosition() {
+        return position;
     }
 }
