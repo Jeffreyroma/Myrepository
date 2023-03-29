@@ -15,7 +15,8 @@ public class GraduateStudent extends Student {
 
     @Override
     public String result() {
-        return ("Name: "+getName()+", Surname: "+getSurName()+", Title group: "+getTitleGroup()+", Number course: "+getNumberCourse()+", Average mark: "+getAverageMark()+", Scientific work: "+getScientificWork()+", Scholarship is: "+getScholarship());
+        return ("Name: "+getName()+", Surname: "+getSurName()+", Title group: "+getTitleGroup()+", Number course: "+getNumberCourse()+"," +
+                " Average mark: "+getAverageMark()+", Scientific work: "+getScientificWork()+", Scholarship is: "+getScholarship());
     }
 
     @Override

@@ -42,15 +42,15 @@ public class Main {
 
     private static void createFruitsInBasket() {
         Apple apple = new Apple(4, 1.5);
-        System.out.println("Apple");
+        System.out.println(apple.getNameOfPosition());
         apple.printManufacturerInfo();
 
         Pear pear = new Pear(2, 0.5);
-        System.out.println("\nPear");
+        System.out.println("\n"+ pear.getNameOfPosition());
         pear.printManufacturerInfo();
 
         Apricot apricot = new Apricot(1, 0.5);
-        System.out.println("\nApricot");
+        System.out.println("\n"+apricot.getNameOfPosition());
         apricot.printManufacturerInfo();
 
         Basket basket = new Basket();

@@ -41,7 +41,8 @@ public class Student {
     public void setAverageMark(double averageMark) {this.averageMark = averageMark;}
 
     public String result() {
-      return ("Name: "+getName()+", Surname: "+getSurName()+", Title group: "+getTitleGroup()+", Number course: "+getNumberCourse()+", Average mark: "+getAverageMark()+", Scholarship is: "+getScholarship());
+      return ("Name: "+getName()+", Surname: "+getSurName()+", Title group: "+getTitleGroup()+", Number course: "+getNumberCourse()+"," +
+              " Average mark: "+getAverageMark()+", Scholarship is: "+getScholarship());
     }
 
     public double getScholarship() {

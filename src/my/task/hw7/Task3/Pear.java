@@ -2,8 +2,6 @@ package my.task.hw7.Task3;
 
 public class Pear extends Fruit {
 
-    final String position = "pear";
-
     public Pear(double cost, double weight) {
         super(cost, weight);
     }
@@ -21,6 +19,6 @@ public class Pear extends Fruit {
 
     @Override
     public String getNameOfPosition() {
-        return position;
+        return "Pear";
     }
 }

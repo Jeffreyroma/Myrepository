@@ -19,9 +19,7 @@ public abstract class Fruit implements Printable {
         this.weight = weight;
     }
 
-    public void printManufacturerInfo() {
-        System.out.print("manufacturerInfo");
-    }
+    public abstract void printManufacturerInfo();
 
     public double getCost() {
         return weight * cost;

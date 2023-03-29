@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Bouquet {
 
-    final List<Flower> flowers;
+   private final List<Flower> flowers;
 
     public Bouquet() {
         flowers = new ArrayList<>();
@@ -42,5 +42,4 @@ public class Bouquet {
         }
         System.out.print(lifTimeOfAllFlowers);
     }
-
 }

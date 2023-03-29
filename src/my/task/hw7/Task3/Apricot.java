@@ -2,8 +2,6 @@ package my.task.hw7.Task3;
 
 public class Apricot extends Fruit {
 
-    final String position = "apricot";
-
     public Apricot(double cost, double weight) {
         super(cost, weight);
     }
@@ -20,6 +18,6 @@ public class Apricot extends Fruit {
 
     @Override
     public String getNameOfPosition() {
-        return position;
+        return "Apricot";
     }
 }
