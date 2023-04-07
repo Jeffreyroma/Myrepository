@@ -17,8 +17,8 @@ public class Main {
         System.out.println("Meaning 1: " + pair.getMeaning1());
         System.out.println("Meaning 2: " + pair.getMeaning2());
 
-        pair.swap();
-        System.out.println(pair);
+        Pair<String,Integer> pair1 = pair.swap();
+        System.out.println(pair1);
 
         pair.setMeaning1(4);
         pair.setMeaning2("dfdf");

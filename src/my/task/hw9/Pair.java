@@ -35,9 +35,8 @@ public class Pair<T, S> {
         this.meaning2 = meaning2;
     }
 
-    public void swap() {
-        T tmp = meaning1;
-        meaning1 = (T) meaning2;
-        meaning2 = (S) tmp;
+    public Pair<S,T> swap() {
+        return new Pair<>(this.meaning2,this.meaning1);
+
     }
 }
