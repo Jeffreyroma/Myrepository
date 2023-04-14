@@ -5,19 +5,27 @@ import java.util.List;
 
 public class UserRepository {
 
-    List<User> users;
-
-    public UserRepository() {
-        users = new ArrayList<>();
-    }
+    public final List<User> users = new ArrayList<>();
 
     public  void addUsers(User user) {
-        users.add(new User(User.getUserName(),User.getUserPassword()));
+        users.add(user);
     }
 
-    public void printUsers() {
+    public boolean checkingByLogin(String userName) {
         for (User user : users) {
-            System.out.println(user);
+            if (user.getUserName().equals(userName)) {
+                return true;
+            }
         }
+        return false;
+    }
+
+    public boolean checkingByLoginAndPassword(String userName,String password) {
+        for (User user : users)  {
+            if (user.getUserName().equals(userName) && user.getUserPassword().equals(password)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
