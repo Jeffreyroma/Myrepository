@@ -12,11 +12,11 @@ public class Main {
         col.add(23);
         col.add(1);
         col.add(0);
-        System.out.println("Max number is: " + col.stream().max(Comparator.naturalOrder()).get());
-        System.out.println("Min number is: " + col.stream().min(Comparator.naturalOrder()).get());
-        System.out.println("Arithmetic mean of numbers is : " + col.stream().mapToDouble(Integer::doubleValue).average().getAsDouble());
-        System.out.println("The product of all numbers is : " + col.stream().reduce((num1, num2) -> num1 * num2).get());
-        System.out.println("The sum of all the numbers is : " + col.stream().reduce(Integer::sum).get());
+        System.out.println("Max number is: " + col.stream().max(Comparator.naturalOrder()).orElse(0));
+        System.out.println("Min number is: " + col.stream().min(Comparator.naturalOrder()).orElse(0));
+        System.out.println("Arithmetic mean of numbers is : " + col.stream().mapToDouble(Integer::doubleValue).average().orElse(0));
+        System.out.println("The product of all numbers is : " + col.stream().reduce(1,(num1, num2) -> num1 * num2));
+        System.out.println("The sum of all the numbers is : " + col.stream().reduce(0,Integer::sum));
         System.out.println("The sum of all digits is : " + col.stream().map(digit->Integer.toString(digit)).flatMapToInt(CharSequence::chars)
                 .map(Character::getNumericValue).sum());
     }
