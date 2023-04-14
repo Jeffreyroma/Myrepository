@@ -1,6 +1,6 @@
 package my.task.hw8.Task3;
 
-public enum SizeClo {
+public enum SizeClothes {
 
     S,
     XS,

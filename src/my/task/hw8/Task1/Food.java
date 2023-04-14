@@ -1,6 +1,4 @@
-package my.task.hw8;
-
-import my.task.hw8.Task1.Cookable;
+package my.task.hw8.Task1;
 
 public class Food  {
 
