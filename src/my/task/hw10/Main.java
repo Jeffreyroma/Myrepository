@@ -21,7 +21,8 @@ public class Main {
         String text = scanner.nextLine();
 
         Map<String, Integer> text1 = new HashMap<>();
-        for (String word : text.split(" ")) {
+        for (String word : text.split("\\s+")) {
+           word= word.toLowerCase().replaceAll("[^a-zA-Zа-яА-Я]", "");
             text1.put(word, text1.getOrDefault(word, 0) + 1);
         }
         System.out.println(text1);
@@ -53,14 +54,5 @@ public class Main {
 
         System.out.println("All animals in a given range");
         System.out.println(shop.searchAnimalByPrice());
-
-
-
-
-
-
-
-
-
     }
 }
